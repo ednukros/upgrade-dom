@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <!-- https://material.io/resources/icons/?style=baseline -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <!-- https://material.io/resources/icons/?style=outline -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+    <!-- https://material.io/resources/icons/?style=round -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Round" rel="stylesheet">
+    <!-- https://material.io/resources/icons/?style=sharp -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp" rel="stylesheet">
+    <!-- https://material.io/resources/icons/?style=twotone -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Two+Tone" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <img src="https://www.dongee.com/wp-content/uploads/mailchimp.png" alt="">
+    </div>
+
+    <main class="container">
+        <h1>Welcome to Mailchimp</h1>
+        <p>Find your people. Engage your customers. Build your brand. Do it all with Mailchimp's Marketing Platform.
+            Already have an account?
+            <span><a href="/">Log in</a></span></p>
+
+        <form action="">
+            <label class="labelForm" for="Email">
+                <p>Email</p>
+                <input class="inputForm" type="email" id="mail" name="email" required>
+            </label>
+
+            <label class="labelForm" for="name">
+                <p>User Name</p>
+                <input class="inputForm" type="text" id="name" name="userName" required>
+            </label>
+
+            <label class="labelForm" for="pass">
+                <p>Password</p>
+                <div class="eye">
+                    <span class="material-icons">visibility</span>
+                    <input class="show" type="button" value="Show">
+                </div>
+
+                <input class="inputForm" type="password" id="pass" name="password" required minlength="8"
+                    pattern="[a-zA-Z0-9\W]{8,}">
+            </label>
+
+
+
+            <div class="list">
+
+                <ul class="listUno">
+                    <li><span>One lowercase character</span></li>
+                    <li><span>One uppercase character</span></li>
+                    <li><span>One number</span></li>
+                </ul>
+
+
+                <ul class="listDos">
+                    <li><span>One special character</span></li>
+                    <li><span>8 character minimum</span></li>
+                </ul>
+
+            </div>
+
+            <div class="check">
+
+                <input id="btn" type="button" value="Sign up" disabled>
+
+
+                <label for="">
+                    <input id="checkbox" type="checkbox" value="">
+                    I don't want to receive emails about new Mailchimp products, best practices, or special offers.
+                </label>
+
+
+            </div>
+
+
+        </form>
+        <p class="last">By clicking the "Sign up" button, you are creating a Mailchimp a account, and you agree to
+            Mailchimp's <span><a href="/">Terms of Use</a></span> and <span><a href="/">Privacy Policy</a></span>.
+        </p>
+
+    </main>
+
+</body>
+
+</html>

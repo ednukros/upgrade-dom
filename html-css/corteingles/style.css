@@ -1,0 +1,18 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.header__container, .header__container-ul{
+    display: flex;
+    justify-content: space-between;
+}
+.header__container-img{
+    height: 150px;
+}
+.header__nav-ul{
+    display: flex;
+    align-items: center;
+}

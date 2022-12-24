@@ -1,0 +1,106 @@
+body, .list, .check{
+    display: flex;
+}
+
+
+
+img{
+    width: 50%;
+    
+    padding-left: 30%;
+    padding-top: 10%;
+}
+
+main{
+    width: 40%;
+    
+}
+
+.inputForm{
+    height: 40px;
+    width: 100%;
+    border-radius: 2.5px;
+    
+}
+
+.labelForm{
+    font-weight: bold;
+}
+
+li{
+    color: cadetblue;
+    font-size: 25px;
+    
+}
+span{
+    color: black;
+    font-size: 15px;
+}
+
+#btn{
+    height: 60px;
+    width: 400px;
+    margin-right: 5%;
+    background-color: white;
+    font-weight: bold;
+    font-size: medium;
+    border-radius: 2.5px;
+}
+
+
+
+#checkbox{
+   transform: scale(1.4);
+}
+
+.last, .check, .list{
+    margin-top: 25px;
+}
+
+p{
+    font-size: 14px;
+}
+.eye{
+    display: flex;
+    margin-left: 86%;
+
+}
+.material-icons{
+    color: cadetblue;
+   
+    display: block;
+}
+.show{
+    display: block;
+    
+    border: 0;
+    color: cadetblue;
+    background-color: white;
+    font-weight: bold;
+}
+body{
+    font-family:'Libre Baskerville', Arial, sans-serif;
+}
+.inputForm:valid{
+    border-color: green;
+}
+
+
+.inputForm:default{
+    border-color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+header {
+    margin: 0;
+    background-color: #1f1f1f;
+    height: 150px;
+
+}
+
+nav {
+
+    margin-left: 150px;
+
+    display: inline-flex;
+
+}
+
+img {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20px;
+
+}
+
+li {
+    display: inline-flex;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+
+}
+
+
+
+.line {
+
+    padding-bottom: 3px;
+    border-bottom: 1.8px solid rgb(230, 200, 12);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+body {
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    height: 100vh;
+
+
+}
+
+/*---------------------- Estilos de concepto.html------------------------ */
+.cuadro-texto {
+
+    background-color: #1f1f1f;
+    height: 350px;
+    width: 50%;
+    margin: 250px;
+    margin-bottom: 7000px;
+
+
+}
+
+p,
+h2 {
+    color: white;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 5%;
+}
+
+h2 {
+    text-align: center;
+    text-decoration: overline;
+    text-decoration-color: #d0d98e;
+}
+
+.main-concept {
+
+    display: flex;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+#body-concept {
+    background-image: url(fondo_concepto.jpg);
+
+}

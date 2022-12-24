@@ -1,0 +1,144 @@
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px;
+}
+
+.tittle{
+    margin: -10px;
+  
+}
+
+.list-nav{
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin-right: 20px;
+   
+    
+}
+.women,.man{
+   margin-left: 20px;
+   font-weight: bold;
+   display: flex;
+  
+   
+}
+nav{
+    display: flex;
+}
+
+.submenu-uno{
+    list-style: none;
+    margin-left: -20px;
+    margin-top: 10px;
+    display: none;
+    position: absolute;
+}
+.submenu-dos{
+    list-style: none;
+    margin-left: -20px;
+    margin-top: 10px;
+    height: 0px;
+    position: absolute;
+    transition:height 1s;
+    overflow: hidden;
+}
+
+.women:hover + .submenu-uno{
+    display: block;
+
+}
+
+.man:hover + .submenu-dos{
+   height: 200px;
+   
+    
+}
+
+
+.icons-search{
+    display: flex;
+    justify-content: space-around;
+    margin-right: 25px;
+}
+.search{
+    margin: 0;
+    height: 18px;
+}
+
+
+img{
+   height: 350px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.description{
+    font-weight: bolder;
+    margin-top: 8px;
+}
+.price{
+    margin-top: -10px;
+    margin-bottom: 35px;
+    font-size: small;
+}
+.description, .price{
+    text-align: center;
+    
+}
+
+input{
+    border: none;
+    border-bottom: 1px solid #000;
+    width: 40%;
+}
+
+.div-label{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#suscribe{
+    font-weight:normal;
+    margin-top: 20px;
+}
+
+.list-section{
+    display: flex;
+    justify-content:center;
+    
+ 
+}
+.section-uno, input, .section-dos{
+    display:block;
+    text-align: center;
+    margin: 0 auto;
+    
+    
+}
+
+.li-class{
+    list-style: none;
+    margin-left: -40px;
+    margin-right: 40px;
+    
+    
+    
+    
+}
+
+.section-dos, .section-uno, .list-section{
+
+    margin: 80px;
+}
+
