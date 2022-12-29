@@ -4,4 +4,52 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
+}
+
+h3 {
+  text-align: center;
+  margin-top: -38px;
+  text-shadow: 0.5px 1px 1px black;
+  color: #ee626f;
+}
+
+body {
+  display: flex;
+  background-color: #cae770;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  height: auto;
+  width: 270px;
+}
+
+.container {
+  height: auto;
+}
+
+#pokedex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.li {
+  padding: 10px;
+}
+
+.imageContainer {
+  box-shadow: 7px 10px 13px 1px rgba(0, 0, 0, 0.78);
+  width: 80px;
+  border-radius: 5px;
+  border: 2.5px solid #00b0c9;
+}
+
+.image {
+  height: auto;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

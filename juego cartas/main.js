@@ -1,60 +1,91 @@
-async function getAllPokemons(pokemonsList) {
-    let pokemonsDetails = [];
+//Recuperar la lista con el id "podekex" y almacenarla en una variable.
 
-    for (let pokemon of pokemonsList) {
-        const response = await fetch(pokemon.url);
-        const result = await response.json();
-        pokemonsDetails.push(result);
-    }
+let urlPokemon = `https://rickandmortyapi.com/api/character`;
 
-    console.log(pokemonsDetails);
-    // RETO: Crear otra función que cree elementos de HTML con más detalles de los pokemons.
-};
+const getPokemons = async (url) => { //peticion
 
-/**
- * TAREA PARA HOY: 
- * Copiar de aquí hacia abajo para tener el mismo resultado.!!!!
- */
-function renderPokemons(pokemonsList) {
-    // Aquí recibiremos el array de pokemons y vamos a crear elementos en el HTML desde JS.
 
-    pokemonsList.forEach(function(pokemon) {
-        const container = document.createElement('div');
+    // try {
+        const response = await fetch(url);
+        const results = await response.json();
+        console.log(results)
 
-        const h2 = document.createElement('h2');
-        h2.textContent = pokemon.name;
+        dataPokemons(results.results)
+    // } catch (error) {
 
-        const link = document.createElement('a');
-        link.href = pokemon.url;
-        link.textContent = 'Link a ' + pokemon.name;
+    //     console.log(error)
+    //     console.log("Algo falló en la petición :(");
 
-        container.appendChild(h2);
-        container.appendChild(link);
+    // }
 
-        document.body.appendChild(container);
-    })
-};
 
-function getPokemons() {
-    fetch("https://pokeapi.co/api/v2/pokemon")
-        .then(function (response) {
-            // abrir el paquete
-            return response.json();
-        })
-        .then(function (result) {
-            // disfrutar de nuestro capricho comprado por amazon
-            // console.log(result.results);
-            renderPokemons(result.results);
-            getAllPokemons(result.results);
-        })
-        .catch(function (error) {
-            console.log("PPPFFFFFFF FALLO EN LA NAVE! NO LLEGA LA PETICIÓN");
-            console.log(error);
-        });
+
+
+
+
+}
+const dataPokemons = async () => {
+    // try {
+
+        
+
+        for (let i = 1; i <= 40; i++) {
+
+            let id = i;
+            const resp = await fetch(`https://rickandmortyapi.com/api/character/${id}`);
+            // const resp = await fetch(urlPokemon + i); 
+            const resul = await resp.json();
+
+
+            //console.log(resul)
+
+           
+            const divImages = document.querySelector("#pokedex");
+            const container$$ = document.querySelector(".container")
+
+
+            
+            
+            //const li$$ = document.createElement("li");
+            
+            const h2$$ = document.createElement('h2');
+            h2$$.textContent = resul.name;
+            const imageContainer$$ = document.createElement('div');
+            const img$$ = document.createElement('img');
+            img$$.src = resul.image;
+            const id$$ = document.createElement('h3');
+            id$$.textContent = resul.id;
+            const types$$ = document.createElement('div');
+            const nameType0$$ = document.createElement('span');
+            
+            imageContainer$$.setAttribute("class", "imageContainer");
+            img$$.setAttribute("class", "image");
+          
+
+            divImages.appendChild(imageContainer$$);
+            imageContainer$$.appendChild(img$$);
+            //li$$.appendChild(id$$);
+            
+            //li$$.appendChild(types$$);
+            //types$$.appendChild(nameType0$$);
+            //types$$.appendChild(nameType1$$);
+            //ol$$.appendChild(li$$);
+            container$$.appendChild(imageContainer$$)
+        }
+    // } catch (error) {
+
+    //     console.log(error)
+    // }
+
 }
 
+//https://rickandmortyapi.com/api/character/10
+
+
 function init() {
-    getPokemons();
+    getPokemons(urlPokemon)
 }
 
 window.onload = init;
+
+
